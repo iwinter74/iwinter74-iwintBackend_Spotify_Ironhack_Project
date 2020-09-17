@@ -1,0 +1,15 @@
+{{> nav }}
+<section id="artist_result">
+    {{#each artist}}
+    <div class="artist">
+        {{#each this.images}}
+        <img src="{{this.url}}" alt="">
+        {{/each}}
+        <div class="artist_container">
+            <p>{{this.name}}</p>
+            <a href="/albums/{{this.id}}">View Albums</a>
+        </div>
+    </div>
+    {{/each}}
+</section>
+{{> footer }}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.artist img:not(:first-of-type), .albums img:not(:first-of-type) {
+    display: none;
+}
+/* .artist img:first-of-type, .albums img:first-of-type {
+    display: block;
+} */
+header {
+padding-bottom: 2em;
+background: #020202;
+}
+footer {
+    padding: 3em;
+    background: #020202;
+}
+footer a {
+    color: #C4C4C4;
+    text-decoration: none;
+    padding-right: 3em;
+    font-size: 0.8em;
+}
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hero {
+background: url("/images/spotify-background.png") center/cover no-repeat;
+padding: 17em 12em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#hero input[type="submit"] {
+background: #FF6666;
+border-radius: 4px;
+color: white;
+border: none;
+padding: 0.3em 1.5em
+}
+#hero input[type="text"] {
+background: #FFFFFF;
+border: 2px solid #020202;
+width: 50%;
+height: 3em;
+padding: 1em;
+margin-bottom: 1em
+}
+#hero form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.733);
+    padding: 5em;
+    width: 70%
+}
+.artist img, .albums img {
+height: 300px;
+width: 300px
+}
+.artist, .albums {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.artist_container, .album_container {
+    text-align: center;
+    background:  #494949;
+    width: 300px;
+    height: 150px;
+}
+.artist_container a, .album_container a {
+    background: #FF6666;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 0.1em 2em;
+    text-decoration: none;
+}
+.artist_container p, .album_container p {
+    color: white;
+    padding: 1em
+}
+#artist_result, #album_result {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    background: #222323;
+    padding: 4em 0
+}
+figcaption {
+    color: white;
+    text-transform: uppercase;
+    padding: 1em
+}
+audio {
+    padding: 1em
+}
+figure {
+    background: #494949;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tracks_result {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    background: #222323;
+    padding: 5em
+}

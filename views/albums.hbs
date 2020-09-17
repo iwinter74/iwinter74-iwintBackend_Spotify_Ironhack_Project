@@ -1,0 +1,15 @@
+{{> nav }}
+<section id="album_result">
+    {{#each albums}}
+    <div class="albums">
+        {{#each this.images}}
+        <img src="{{this.url}}" alt="">
+        {{/each}}
+        <div class="album_container">
+            <p>{{this.name}}</p>
+            <a href="/tracks/{{this.id}}">View Tracks</a>
+        </div>
+    </div>
+    {{/each}}
+</section>
+{{> footer }}
