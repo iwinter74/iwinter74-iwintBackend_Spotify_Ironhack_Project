@@ -14,11 +14,11 @@
     display: block;
 } */
 header {
-padding-bottom: 2em;
+padding-bottom: 3em;
 background: #020202;
 }
 footer {
-    padding: 3em;
+    padding: 4em;
     background: #020202;
 }
 footer a {
@@ -35,7 +35,7 @@ footer ul {
 
 #hero {
 background: url("/images/spotify-background.png") center/cover no-repeat;
-padding: 17em 12em;
+padding: 18em 12em;
 display: flex;
 flex-direction: column;
 justify-content: center;

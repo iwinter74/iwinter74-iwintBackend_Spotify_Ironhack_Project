@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 // const PORT = process.env.PORT || 3006
+const port = 3006
 require('dotenv').config()
 // display content of .env
 console.log(process.env)
@@ -88,9 +89,10 @@ app.get('/tracks/:albumId', (req, res, next) => {
   });
 })
 
-  app.listen(process.env.PORT, (req, res) => {
+  app.listen(process.env.PORT || port, (req, res) => {
     console.log(`Server started`)
   })
+
 
 
 
